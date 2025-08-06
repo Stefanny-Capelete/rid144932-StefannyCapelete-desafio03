@@ -83,7 +83,7 @@ function RenderizarTarefa(tarefa) {
 }
 
 function ConcluirTarefa(tarefaTexto) {
-  // Atualiza a tarefa no localStorage
+  
   const tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
   const index = tarefas.findIndex(t => t.texto === tarefaTexto && !t.concluida);
   if (index !== -1) {
@@ -91,7 +91,7 @@ function ConcluirTarefa(tarefaTexto) {
     localStorage.setItem("tarefas", JSON.stringify(tarefas));
   }
 
-  // Recarrega a lista para refletir a mudança
+  
   document.querySelector("#To-Do-List").innerHTML = "";
   document.querySelector("#Task-Concluida").innerHTML = "";
   tarefasConcluidas = 0;
