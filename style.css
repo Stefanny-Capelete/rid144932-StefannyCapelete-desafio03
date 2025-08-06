@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+height: 100vh;
+max-width: 1440px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 2rem;
+}
+
+html{
+background: #F5F9FF;
+font-size: 16px;
+}
+
+main {
+background: #FFFFFF;
+margin: 3rem;
+border-radius: 1rem;}
+
+#Title h1 {
+color:#11175E;
+margin: 1rem 2rem;
+font-family: 'rubik';
+}
+
+#Inputs input {
+width: 13.5rem;
+height: 2.3rem;
+padding-left: .4rem;
+margin: .6rem;
+color: #B1BACB;
+border: #EEEEEE solid 1px;
+border-radius: .5rem;
+font-family: 'rubik';
+font-size: 1rem;
+}
+
+#Inputs button {
+width:2.5rem;
+height: 2.5rem;
+border: none;
+background: #2D70FD;
+border-radius: .5rem;
+margin: 1rem 1rem;
+color: #FFFFFF;
+font-size: 1rem;
+font-family: 'inter';
+cursor: pointer;
+}
+
+.tarefa-item {
+color: #001747;
+font-family: 'inter';
+font-size: 1rem;
+border: solid 1px #EEEEEE;
+border-radius: 1rem;
+padding: 1rem 0rem;
+margin: 1rem;
+display: flex;
+justify-content: space-between;
+}
+
+.tarefa-item button {
+background: #2D70FD;
+color: #FFFFFF;
+font-family: 'inter';
+font-size: 1rem;
+border: none;
+border-radius: .5rem;
+padding: .5rem 1.2rem;
+margin-top: .6rem;
+margin-right: 1rem;
+cursor: pointer;
+height: 3rem;
+}
+
+.info-p {
+display: grid;
+grid-template-columns: 1fr ;
+gap: 10px;
+}
+
+.task {
+grid-column: 1 / span 2;
+font-weight: bold;
+list-style: none;
+}
+
+.tag {
+border: solid 1.5px  #B1BACB;
+border-radius: 1rem;
+color: #B1BACB;
+font-family: 'inter';
+font-size: .75rem;
+padding: 0 .5rem ;  
+list-style: none;  
+width: 4rem;
+}
+
+.data {
+color: #B1BACB;
+font-family: 'inter';
+font-size: 0.87rem;
+list-style: none; 
+}
+
+.check-icon{
+margin-top: .6rem;
+padding-right: 1rem;
+}
+
+#To-Do-List:empty,
+#Task-Concluida:empty {
+display: none;
+
+}
+
+#Footer {
+text-align: right;
+color: #B1BACB;
+margin: 1rem;
+}
+#line-footer{
+
+    border: solid 1px #EEEEEE;
+    width: 90%;
+    margin: 2rem 1rem;
+}
+
+
+@media only screen and (max-width: 767px){
+body{
+min-width: 320px;
+height: auto;
+margin: 0;
+}
+
+html{
+background: #FFFFFF;
+}
+
+#Inputs input{
+width: 17rem;
+height: 3rem;
+border: solid 1px #EEEEEE;
+border-radius: .5rem;
+padding-left: .6rem ;
+margin: 1rem 1rem;
+display: flex;
+align-items: center;
+}
+
+#Inputs button{
+width:17rem;
+height: 3rem;
+border: none;
+background: #2D70FD;
+border-radius: .5rem;
+padding-left: 1rem ;
+margin: .5rem 1rem;
+color: #FFFFFF;
+}
+
+.tarefa-item{
+display: grid;
+grid-auto-columns: 1fr;
+
+} 
+
+.tarefa-item button{
+width: 7rem;
+margin-left: 6rem;
+}
+
+
+.info-p{
+display: grid;
+grid-column: 1fr;
+grid-row: auto ;
+gap: 15px;  
+
+}
+
+.task{
+grid-column: 1
+}
+
+
+#Task-Concluida , #To-Do-List{
+border:  1px #EEEEEE;
+width: 18rem;
+margin: 1rem 1rem 1rem 1rem;
+
+
+} 
+
+.check-icon{
+margin-left: 7rem ;
+}
+
+
+}
